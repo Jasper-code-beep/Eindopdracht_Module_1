@@ -1,0 +1,125 @@
+.body { background-color: rgb(252, 243, 143);
+
+}
+
+.container {
+    display: grid;
+    grid-gap: 3px;   
+    grid-template-columns:10px 1fr 1fr 10px;
+    grid-template-rows: 80px auto 1fr 140px 80px;
+    grid-template-areas: 
+    ". header header ."
+    ". article article ."
+    ". appels appels ."
+    ". aanbod afname ."
+    ". footer footer .";
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(14, 109, 5);
+    text-align: center;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(222, 236, 236)
+    
+    
+}
+
+header{ padding: 0.5em;}
+
+.article {
+    grid-area:article;
+    /*background-color: chartreuse;*/
+    padding: 1em;
+    font-size: 18px;text-align: center; 
+}
+
+.appels {
+    grid-area: appels;
+    /*background-color: aqua;*/
+    text-align: center;   
+    margin: 0.5em;
+}
+
+.responsive{ 
+    width: 100%;
+    height: auto;
+}
+
+.aanbod {
+    grid-area:aanbod;
+    background-color: rgb(174, 240, 158);
+    border-style: solid;
+    padding: 1em;
+    font-size: 20px;
+    border-radius: 15;
+    text-align: center ;
+    margin: 0.5em;
+    
+}
+
+afname:hover { background-color: rgb(245, 209, 7);}
+aanbod:hover { background-color: rgb(99, 212, 89);}
+
+.afname {
+    grid-area:afname;
+    background-color: rgb(243, 229, 106);
+    border-style: solid;
+    padding: 1em;
+    font-size: 20px;
+    border-radius: 15;
+    text-align: center;
+    margin: 0.5em;
+    
+
+}
+
+.footer {
+    grid-area:footer;
+    /*background-color: rgb(212, 215, 228);*/
+    padding: 1em;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(4, 107, 44);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(35, 211, 35);
+  }
+
+
+@media (min-width: 1024px) {.container {
+    display: grid;
+    grid-gap: 3px;   
+    grid-template-columns:10px 140px 10px 1fr 1fr 10px;
+    grid-template-rows: 80px 1fr 1fr auto;
+    grid-template-areas: 
+
+    ". header . footer footer footer ."
+    ". header . article article . ."
+    ". header . aanbod  afname . ."
+    ". header . appels appels . ."
+}}
+   
+@media (min-width: 1024px) {.article {font-size: 22px;
+}
+} 
+

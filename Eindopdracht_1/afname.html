@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Afname</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="body">
+
+    <main>
+        <header>
+            <div class="b">
+                <h2>Afname GoedVersVoer</h2>
+                <p> Hier kunt u zich aanmelden als afnemer. Laat u ons ook weten of u de producten kunt verwerken en vervoeren en in welke hoeveelheden u kunt afnemen.
+                    Wij nemen zo spoedig mogelijk contact met u op.
+
+                </p>
+            </div>
+        </header>
+
+        <section>
+            <form name="Recipe submission" method="POST" data-netlify="true">
+
+                <p><label for="fname">Voornaam:</label>
+                    <input type="text" id="fname" name="fname"></p>
+
+                <p><label for="lname">Achternaam:</label>
+                    <input type="text" id="lname" name="lname"></p>
+
+                <p><label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </p>
+
+                <p>
+                <label for="telephonenumber">Telefoonnummer:</label><br>
+                <input type="number" id="telephonenumber" name="telephonenumber" min="1"><br>
+            </p>
+
+                <label for="message">Vertel ons welk type product u kunt afnemen:</label><br>
+                <textarea name="message" rows="10" cols="30">
+                  </textarea><br>
+
+               
+
+                <hr>
+
+                <p><input type="submit" value="Verzend">
+            
+                </p>
+
+
+            </form>
+        </section>
+    </main>
+
+    <nav class="home">
+        <a href="Index.html">terug</a>
+    </nav>
+
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aanbod</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="body">
+
+    <main>
+        <header>
+            <div class="b">
+                <h2>Aanbod Goed Vers Voedsel</h2>
+                <p><strong>Vult u hier zoveel mogelijk gegevens in over het te verwachten voedsel overschot. Als u het
+                        formulier volledig heeft ingevuld nemen wij zo snel mogelijk contact met u op.
+                        Indien uw product in aanmerking komt gaan wij op zoek naar een geschikte afnemer.</strong>
+                </p>
+
+            </div>
+        </header>
+
+
+        <section>
+            <form name="Aanbod" method="POST" data-netlify="true">
+
+                <p><label for="fname">Voornaam:</label>
+                    <input type="text" id="fname" name="fname"></p>
+
+                <p><label for="lname">Achternaam:</label>
+                    <input type="text" id="lname" name="lname"></p>
+
+                <p><label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </p>
+                <p>
+                    <label for="telephonenumber">Telefoonnummer:</label><br>
+                    <input type="number" id="telephonenumber" name="telephonenumber" min="1"><br>
+                </p>
+                <p>
+                    <label for="message">Beschrijving van de product(en):</label><br>
+                    <textarea name="message" rows="10" cols="30">
+                  </textarea>
+                </p>
+
+                <p><label for="locatie">Locatie van product:</label><br>
+                    <input type="locatie" id="locatie" name="email"><br>
+                </p>
+
+                <label for="datumbeschikbaar">Datum beschikbaarheid:</label><br>
+                <input type="date" id="datumbeschikbaar" name="datumbeschikbaar">
+
+                <p><strong>Indien mogelijk kunt u hier foto's uploaden:</strong></p>
+
+                <label for="recipe">Select a file:</label>
+                <input type="file" id="recipe" name="recipe"><br>
+
+                <hr>
+
+                <p><input type="submit" value="Versturen">
+                </p>
+
+
+            </form>
+        </section>
+    </main>
+
+    <nav class="home">
+        <a href="Index.html">terug</a>
+    </nav>
+
+    <hr>
+
+</body>
+
+</html>
